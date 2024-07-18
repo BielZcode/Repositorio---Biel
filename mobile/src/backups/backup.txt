@@ -1,0 +1,51 @@
+<header class="navbar">
+        <div class="nav">
+            <ul class="sidebar" id="sidebar">
+                <li><i class="bi bi-columns-gap"></i><a href="painel">Painel de Controle</a></li>
+                <li><a class="submenu-toggle">Hospedagem</a>
+                    <ul class="submenu">
+                        <li><a href="#">Informação do Plano</a></li>
+                        <li><a href="#">Consumo de Recursos</a></li>
+                        <li><a href="#">Renovar</a></li>
+                        <li><a href="#">Upgrade</a></li>
+                    </ul>
+                </li>
+                <li><a class="submenu-toggle">Desempenho</a>
+                    <ul class="submenu">
+
+                    </ul>
+                </li>
+                <li><a class="submenu-toggle">Segurança</a>
+                    <ul class="submenu">
+                        <li><a href="#">Detectar Malware</a></li>
+                        <li><a href="#">Security Bot</a></li>
+                    </ul>
+                </li>
+                <li><a class="submenu-toggle">Email</a>
+                    <ul class="submenu">
+                        
+                    </ul>
+                </li>
+                <li><a class="submenu-toggle">Vendas</a>
+                    <ul class="submenu">
+
+                    </ul>
+                </li>
+                <li><a class="submenu-toggle">Bots</a>
+                    <ul class="submenu">
+
+                    </ul>
+                </li>
+                <li><a class="submenu-toggle">Arquivos</a>
+                    <ul class="submenu">
+                        
+                    </ul>
+                </li>
+                <li><a class="submenu-toggle">Avançado</a>
+                    <ul class="submenu">
+                        <li><a href="#">Log de Atividades</a></li>
+                        <li><a href="#">Proteção de Conexão</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>

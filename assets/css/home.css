@@ -1,0 +1,499 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Estilo para Firefox */
+html {
+    scrollbar-width: none; /* Oculta a barra de rolagem vertical */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    color: #000;
+}
+
+.header .carder .stat-item img {
+    margin-left: 500px;
+    height: 500px;
+}
+
+.header2 .carder2 .stat-item2 img {
+    height: 500px;
+}
+
+@media screen and (max-width: 600px){
+    .btn-warning{
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    border-color: #fc960f;
+    background-color: #FDAC41;
+    border: 0 solid transparent;
+    font-size: 1rem;
+    border-radius: 0.267r;
+    right: -100px;
+    }#sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px; /* Esconde o sidebar à esquerda */
+        width: 300px;
+        height: 100%;
+        background-color: #fff; /* Cor de fundo do sidebar */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para o sidebar */
+        transition: left 0.3s ease; /* Transição suave para o efeito de abertura/fechamento */
+    }
+
+    #sidebar.active {
+        left: 0; /* Mostra o sidebar quando estiver ativo */
+    }
+
+    .menu-icon {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1001; /* Coloca o ícone do menu acima do sidebar */
+        cursor: pointer;
+    }
+
+    .nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav ul li {
+        padding: 10px 15px;
+        border-bottom: 1px solid #eee; /* Linha separadora entre itens do menu */
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+    }
+
+    .submenu ul {
+        display: none; /* Submenus inicialmente escondidos */
+        background-color: #f9f9f9; /* Cor de fundo do submenu */
+    }
+
+    .submenu.active ul {
+        display: block; /* Mostra o submenu quando estiver ativo */
+    }
+
+}
+@media only screen and (min-width: 800px){
+    .btn-warning{
+    right: -540px;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    border-color: #fc960f;
+    background-color: #FDAC41;
+    border: 0 solid transparent;
+    font-size: 1rem;
+    border-radius: 0.267r;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-secondary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+.card-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.card-menu .stat-items .items {
+    padding: 16px;
+    padding-left: 30px;
+    border:  0.1px solid #d3d3d3;
+    width: 330px;
+    margin-left: 50px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.card-menu .stat-items .items2 {
+    padding: 16px;
+    padding-left: 30px;
+    background:#971ac9;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 330px;
+    margin-left: 50px;
+    text-align: center;
+    margin-top: -43px;
+    color: #fff;
+}
+
+.card-menu .stat-items .items3 {
+    padding: 16px;
+    padding-left: 30px;
+    border:  0.1px solid #971ac9;
+    width: 330px;
+    margin-left: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: left;
+}
+
+.card-menu .stat-items .items input{
+    width: 95%;
+    border:  0.1px solid #971ac9;
+    cursor: pointer;
+    color: #971ac9;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.card-menu .stat-items .items3 input{
+    width: 95%;
+    border:  0.1px solid #971ac9;
+    cursor: pointer;
+    color: #ffffff;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    background-color: #971ac9;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-menu .stat-items .items3 input:hover {
+    background-color: #b045df;
+}
+
+.card-menu .stat-items .items p {
+    margin-top: 35px;
+    margin-bottom: 80px;
+    color: rgb(145, 101, 185);
+}
+
+.card-menu .stat-items .items3 p {
+    margin-top: 35px;
+    margin-bottom: 80px;
+    color: rgb(145, 101, 185);
+}
+
+.card-menu .stat-items .items p1 {
+    margin-top: 35px;
+    margin-bottom: 80px;
+    color: rgb(145, 101, 185);
+}
+
+.card-menu .stat-items .items h4 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #8624ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-menu .stat-items .items3 h4 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #8624ad;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-menu .stat-items .items span {
+    margin-top: 55px;
+    margin-left: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(91, 73, 194);
+}
+
+.card-menu .stat-items .items3 span {
+    margin-top: 55px;
+    margin-left: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(91, 73, 194);
+}
+
+.card-menu .stat-items .items h2 {
+    margin-top: 55px;
+    font-size: 15px;
+    text-align: right;
+    margin-top: -34px;
+    margin-right: 115px;
+    color: rgb(91, 73, 194);
+}
+
+.card-menu .stat-items .items h3 {
+    margin-top: 55px;
+    margin-bottom: -50px;
+    font-size: 19px;
+    text-align: left;
+    margin-top: -34px;
+    margin-right: 150px;
+    color: rgb(91, 73, 194);
+}
+
+.card-menu .stat-items .items h1 {
+    color: rgb(91, 73, 194);
+}
+
+.card-menu .stat-items .items3 h2 {
+    margin-top: 55px;
+    font-size: 15px;
+    text-align: right;
+    margin-top: -34px;
+    margin-right: 115px;
+    color: rgb(91, 73, 194);
+}
+
+.card-menu .stat-items .items3 h3 {
+    margin-top: 55px;
+    margin-bottom: -50px;
+    font-size: 19px;
+    text-align: left;
+    margin-top: -34px;
+    margin-right: 150px;
+    color: rgb(91, 73, 194);
+}
+
+.card-menu .stat-items .items3 h1 {
+    color: rgb(91, 73, 194);
+}
+
+.header {
+    width: 100%;
+    padding: 55px 50px;
+    color: #3a2069;
+    height: 50vh;
+    text-align: left;
+}
+
+.header .item {
+    margin-left: 20px;
+    width: 400px;
+    margin-top: -475px;
+}
+
+.header .item .text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+}
+
+.header .item .text button {
+    margin-top: 20px;
+    width: 55%;
+    height: 50px;
+    background-color: #971ac9;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .item .text button:hover {
+    cursor: pointer;
+    background-color: #b045df;
+}
+
+.header .item p {
+    margin-top: 20px;
+}
+
+.header .item .text span > i {
+    color: rgb(65, 219, 135);
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.header .item .text span1 {
+    margin-top: 1px;
+    margin-left: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(91, 73, 194);
+}
+
+.header .item .text p {
+    color: rgb(91, 73, 194);
+}
+
+.header .item .text p > i {
+    margin-right: 10px;
+    color: rgb(91, 73, 194);
+}
+
+.header .item .text span1 h2 {
+    margin-top:-37px;
+    margin-left: 95px;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: rgb(91, 73, 194);
+}
+
+.header .item .text h3 {
+    margin-top: 55px;
+    margin-bottom: -50px;
+    font-size: 19px;
+    text-align: left;
+    margin-top: 44px;
+    margin-right: 150px;
+    color: rgb(91, 73, 194);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+.header2 {
+    margin-top: 200px;
+    width: 100%;
+    padding: 55px 50px;
+    color: #ffffff;
+    height: 70vh;
+    text-align: left;
+    background-color: #8624ad;
+}
+
+.header2 .item2 {
+    width: 400px;
+    margin-top: -475px;
+    margin-left: 800px;
+}
+
+.header2 .item2 .text2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 18px;
+}
+
+.header2 .item2 .text2 button {
+    margin-top: 20px;
+    width: 55%;
+    height: 50px;
+    background-color: #971ac9;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.header2 .item2 p {
+    margin-top: 20px;
+}
+
+.header2 .item2 .text2 span > i {
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.header2 .item2 .text2 span1 {
+    margin-top: 1px;
+    margin-left: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgb(91, 73, 194);
+}
+
+.header2 .item2 .text2 p {
+    color: rgb(91, 73, 194);
+}
+
+.header2 .item2 .text2 p > i {
+    margin-right: 10px;
+    color: rgb(91, 73, 194);
+}
+
+.header2 .item2 .text2 span1 h2 {
+    margin-top:-37px;
+    margin-left: 95px;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: rgb(91, 73, 194);
+}
+
+.header2 .item2 .text2 h3 {
+    margin-top: 55px;
+    margin-bottom: -50px;
+    font-size: 19px;
+    text-align: left;
+    margin-top: 44px;
+    margin-right: 150px;
+    color: rgb(91, 73, 194);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.divbar div {
+    padding: 0.1px;
+    width: 100%;
+    background-color: #3a2069;
+    border: 0.1px solid #3a2069;
+}

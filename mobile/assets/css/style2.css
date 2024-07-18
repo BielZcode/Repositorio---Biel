@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    background: #444;
+}
+
+nav a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    border-radius: 30px;
+    background: #555;
+}
+
+/* Hero Section */
+#hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #1f1f1f;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#hero .btn-primary {
+    background: #28a745;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+#hero .btn-primary:hover {
+    background: #218838;
+}
+
+/* Seção de Planos */
+#planos {
+    padding: 2rem 1rem;
+    background: #fff;
+    text-align: center;
+}
+
+#planos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.plano {
+    display: inline-block;
+    background: #6f1ff0;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 290px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plano h3 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.plano p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.plano ul {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.plano ul li {
+    color: #fff;
+    margin: 0.5rem 0;
+}
+
+.plano .btn-secondary {
+    background: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.plano .btn-secondary:hover {
+    background: #0056b3;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

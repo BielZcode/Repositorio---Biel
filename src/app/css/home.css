@@ -1,0 +1,27 @@
+.main-content {
+    display: flex;
+    justify-content: left;
+}
+
+.card-menu h1 {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.card-menu .bar {
+    color: #fff;
+    border: 0.1px solid #fff;
+    width: 900%;
+}
+
+.card-menu input {
+    margin-left: 138vh;
+    background-color: transparent;
+    border: none;
+    border: 0.1px solid #adadad;
+    padding: 10px;
+}
+
+.card-menu .item {
+    border: 0.1px solid #fff;
+}

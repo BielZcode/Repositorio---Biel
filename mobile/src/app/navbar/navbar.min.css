@@ -1,0 +1,82 @@
+/* Estilos para a seta indicativa */
+.submenu > a .bi-chevron-up {
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+}
+
+.submenu.active > a .bi-chevron-up {
+    transform: rotate(180deg); /* Gira a seta 180 graus quando submenu está ativo */
+}
+
+.submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0; /* Altura máxima inicial para esconder o submenu */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a altura máxima */
+    transition: max-height 0.3s ease-in-out; /* Transição suave para altura máxima */
+    border: 1px solid #ffffff; /* Borda branca */
+    border-top: none; /* Remove a borda superior */
+}
+
+.submenu.active ul {
+    max-height: 500px; /* Altura máxima para mostrar o submenu completamente */
+}
+
+.submenu > a {
+    display: block;
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent; /* Borda inferior inicial transparente */
+    transition: background-color 0.3s ease, border-bottom-color 0.3s ease, border-color 0.3s ease; /* Transições suaves */
+    border: 1px solid #ffffff; /* Borda branca */
+}
+
+.submenu.active > a {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo quando submenu está ativo */
+    border-bottom-color: #ffffff; /* Borda inferior branca quando submenu está ativo */
+}
+
+.submenu > a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo no hover */
+    border-color: #ffffff; /* Borda branca no hover */
+}
+
+.nav ul > li > a {
+    border: 1px solid transparent; /* Borda inicial transparente */
+    transition: border-color 0.3s ease; /* Transição suave para animar a cor da borda */
+}
+
+.nav ul > li > a:hover {
+    border-color: #ffffff; /* Cor da borda no hover */
+}
+s
+/* Estilos para a manopla da barra de rolagem */
+/* Você pode ajustar conforme necessário */
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--sidebar-link-color);
+    border-radius: 10px; /* Adiciona bordas arredondadas à manopla */
+}
+
+/* Estilos para a barra de rolagem */
+/* Você pode ajustar conforme necessário */
+.sidebar::-webkit-scrollbar-track {
+    background-color: #1c1c1c;
+    border-radius: 10px; /* Adiciona bordas arredondadas à barra */
+}
+s
+/* Estilos para a parte inicial da barra de rolagem */
+/* Esta regra adiciona uma borda à parte inicial da barra de rolagem */
+.sidebar::-webkit-scrollbar-track-piece:start {
+    background-color: #1c1c1c;
+    border-top-left-radius: 10px; /* Adiciona bordas arredondadas ao canto superior esquerdo */
+    border-top-right-radius: 10px; /* Adiciona bordas arredondadas ao canto superior direito */
+    border: 1px solid var(--sidebar-link-color); /* Adiciona uma borda à parte inicial da barra de rolagem */
+}
+
+/* Estilos para a parte final da barra de rolagem */
+/* Esta regra adiciona uma borda à parte final da barra de rolagem */
+.sidebar::-webkit-scrollbar-track-piece:end {
+    background-color: #1c1c1c;
+    border-bottom-left-radius: 10px; /* Adiciona bordas arredondadas ao canto inferior esquerdo */
+    border-bottom-right-radius: 10px; /* Adiciona bordas arredondadas ao canto inferior direito */
+    border: 1px solid var(--sidebar-link-color); /* Adiciona uma borda à parte final da barra de rolagem */
+}

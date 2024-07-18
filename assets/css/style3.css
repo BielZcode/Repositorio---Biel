@@ -1,0 +1,195 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn-secondary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.hero .btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Planos Section */
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#recursos {
+    background-color: #f9f9f9;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-ghost:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Recursos Section */
+.feature-list {
+    list-style: none;
+    text-align: left;
+    margin-top: 2rem;
+}
+
+.feature-list li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Suporte Section */
+#suporte {
+    background-color: #fff;
+}
+
+#suporte p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#suporte .btn-primary {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#suporte .btn-primary:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

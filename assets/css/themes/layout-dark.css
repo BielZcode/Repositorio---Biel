@@ -1,0 +1,108 @@
+:root {
+    --blue: #5A8DEE;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #FF5B5C;
+    --orange: #fd7e14;
+    --yellow: #FDAC41;
+    --green: #39DA8A;
+    --teal: #20c997;
+    --cyan: #00CFDD;
+    --white: #FFFFFF;
+    --gray: #475F7B;
+    --gray-dark: #394C62;
+    --primary: #5A8DEE;
+    --secondary: #475F7B;
+    --success: #39DA8A;
+    --info: #00CFDD;
+    --warning: #FDAC41;
+    --danger: #FF5B5C;
+    --light: #A3AFBD;
+    --dark: #394C62;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: "IBM Plex Sans", Helvetica, Arial, serif;
+    --font-family-monospace: "Rubik", Helvetica, Arial, serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+.card-menu {
+    margin-top: 200px;
+    text-align: left;
+    margin-left: -83vh;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+.card-menu p {
+    color: #000;
+}
+
+.card-menu a {
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.menu-card h1 {
+    margin-top: 30px;
+    margin-left: 45px;
+    color: blueviolet;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.items p {
+    color: rgb(29, 23, 34);
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.items h1 {
+    color: rgb(29, 23, 34);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.items input[type=checkbox] {
+    margin-top: 10px;
+    margin-left: -260px;
+    background-color: blueviolet;
+    border-radius: 10px;
+}
+
+.items {
+    border: 3px solid #5f0683;
+    width: 255px;
+    color: rgb(29, 23, 34);
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.items:hover {
+    border: 3px solid #bb0eff;  
+}
+
+/* Cartoes */

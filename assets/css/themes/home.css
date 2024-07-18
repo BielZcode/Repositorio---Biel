@@ -1,0 +1,314 @@
+/* Estilos padrão */
+/* Estilos para o tema escuro */
+.dark-theme {
+    --background-color: #1c1c1c;
+    --text-color: #fff;
+    --sidebar-bg-color: #363636; /* Cor corrigida */
+    --sidebar-link-color: #fff;
+    --sidebar-link-hover-bg-color: zs#575757;
+    --main-content-bg-color: #282828;
+    --header-bg-color: #ff0057;
+    --stat-item-bg-color: #333;
+    --servers-bg-color: #333;
+    --table-border-color: #444;
+}
+
+:root {
+    --background-color: #353535;
+    --text-color: #fff;
+    --sidebar-bg-color: #363636; /* Cor corrigida */
+    --sidebar-link-color: #fff;
+    --sidebar-link-hover-bg-color: #575757;
+    --main-content-bg-color: #282828;
+    --header-bg-color: #ff0057;
+    --stat-item-bg-color: #333;
+    --servers-bg-color: #333;
+    --table-border-color: #444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: var(--text-color);
+    margin: 0;
+    display: flex;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    width: 120%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff; /* Utilizando a variável */
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divider {
+    padding: 0px;
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0 1rem;
+    background-color: #FFFFFF;
+}
+
+.profile-img {
+    width: 400px;
+    height: 200px;
+    margin: -80px ;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 20px 0;
+}
+
+.nav ul li a {
+    color: var(--sidebar-link-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: var(--sidebar-link-hover-bg-color);
+}
+
+.nav ul li a i {
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-left: 270px; /* Adjust this based on the sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.header p {
+    text-align: left;
+    font-size: 20px;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.main-content .bar {
+    
+}
+
+.item {
+    border-radius: 5px;
+    width: 350px;
+    padding: 5px;
+}
+
+.item h1 {
+    font-size: 19px;
+    color: blueviolet;
+}
+
+.stats {
+    border-radius: 5px;
+    border: 0.1px solid #727E8C;
+    width: 333%;
+}
+
+.header {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat-item {
+    background-color: var(--stat-item-bg-color);
+    padding: 40px;
+    border-radius: 3px;
+    color: #bdd1f8;
+    border: 0 solid #ffffff;
+    flex: 1;
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.btn-warning {
+    display: flex;
+    position: relative;right: -540px;
+    font-weight: 400;
+    color: #727E8C;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 0 solid transparent;
+    padding: 0.467rem 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    border-radius: 0.267rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.servers {
+    background-color: var(--servers-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    border-color: red;
+    align-items: center;
+}
+
+.servers table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.servers table th,
+.servers table td {
+    padding: 0px;
+    text-align: left;
+}
+
+/* Estilo para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Estilo para Firefox */
+html {
+    scrollbar-width: none; /* Oculta a barra de rolagem vertical */
+}
+
+
+/* Estilos para a manopla da barra de rolagem */
+/* Você pode ajustar conforme necessário */
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--sidebar-link-color);
+    border-radius: 10px; /* Adiciona bordas arredondadas à manopla */
+}
+
+/* Estilos para a barra de rolagem */
+/* Você pode ajustar conforme necessário */
+.sidebar::-webkit-scrollbar-track {
+    background-color: #1c1c1c;
+    border-radius: 10px; /* Adiciona bordas arredondadas à barra */
+}
+
+/* Estilos para a parte inicial da barra de rolagem */
+/* Esta regra adiciona uma borda à parte inicial da barra de rolagem */
+.sidebar::-webkit-scrollbar-track-piece:start {
+    background-color: #1c1c1c;
+    border-top-left-radius: 10px; /* Adiciona bordas arredondadas ao canto superior esquerdo */
+    border-top-right-radius: 10px; /* Adiciona bordas arredondadas ao canto superior direito */
+    border: 1px solid var(--sidebar-link-color); /* Adiciona uma borda à parte inicial da barra de rolagem */
+}
+
+/* Estilos para a parte final da barra de rolagem */
+/* Esta regra adiciona uma borda à parte final da barra de rolagem */
+.sidebar::-webkit-scrollbar-track-piece:end {
+    background-color: #1c1c1c;
+    border-bottom-left-radius: 10px; /* Adiciona bordas arredondadas ao canto inferior esquerdo */
+    border-bottom-right-radius: 10px; /* Adiciona bordas arredondadas ao canto inferior direito */
+    border: 1px solid var(--sidebar-link-color); /* Adiciona uma borda à parte final da barra de rolagem */
+}
+
+/* Regras de mídia para dispositivos móveis */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: block;
+        background: #ffffff;
+        left: 100%;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-item {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav ul li a {
+        justify-content: center;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .servers table th,
+    .servers table td {
+        padding: 5px;
+    }
+    .btn-warning {
+        display: flex;
+        position: relative;right: -100px;
+        font-weight: 400;
+        color: #727E8C;
+        text-align: center;
+        vertical-align: middle;
+        background-color: transparent;
+        border: 0 solid transparent;
+        padding: 0.467rem 1.5rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        border-radius: 0.267rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+}
+
+.nav-links li img {
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.navbar2 {
+    color: #363636;
+    margin-top: 500px;
+}
